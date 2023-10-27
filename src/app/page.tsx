@@ -13,7 +13,7 @@ export default function Home() {
   const percentage = Math.round(((now - f) / totalday) * 100);
 
   return (
-    <div className="flex justify-center items-center flex-col gap-4 h-[calc(100vh-52px)] max-w-[600px] mx-auto px-4">
+    <div className="flex justify-center items-center flex-col gap-4 h-[calc(100vh-92px)] max-w-[600px] mx-auto px-4">
       <h1 className="text-white text-3xl font-bold sm:text-4xl">
         {year} is {percentage}% complete
       </h1>
