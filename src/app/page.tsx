@@ -19,10 +19,8 @@ export default function Home() {
       </h1>
       <div className="w-full h-10 bg-green-800 p-1 rounded-lg">
         <div
-          className={clsx(
-            "h-full bg-green-500 rounded-md",
-            `w-[${percentage}%]`
-          )}
+          className="h-full bg-green-500 rounded-md"
+          style={{ width: `${percentage}%` }}
         ></div>
       </div>
     </div>
