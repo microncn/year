@@ -23,15 +23,12 @@ export default function RootLayout({
         <a
           href="https://www.launchgood.com/communitypage/support_palestinians_in_gaza"
           target="_blank"
-          className="flex justify-center items-center bg-neutral-800 text-white py-2 gap-2"
+          className="flex justify-center items-center bg-neutral-900 text-white py-2 gap-2"
         >
           <img src={flag.src} className="w-5" />
           <p>#FreePalestine</p>
         </a>
         {children}
-        <footer className="text-neutral-400 text-center p-4 text-sm">
-          Copyright © 2023 microncn
-        </footer>
       </body>
     </html>
   );

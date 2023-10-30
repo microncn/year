@@ -14,12 +14,13 @@ export default function Home() {
 
   return (
     <div className="flex justify-center items-center flex-col gap-4 h-[calc(100vh-92px)] max-w-[600px] mx-auto px-4">
-      <h1 className="text-white text-3xl font-bold sm:text-4xl">
-        {year} is {percentage}% complete
+      <h1 className="text-neutral-400 text-3xl font-semibold sm:text-4xl">
+        {year} is <span className="font-bold text-white">{percentage}%</span>{" "}
+        complete
       </h1>
-      <div className="w-full h-10 bg-green-800 p-1 rounded-lg">
+      <div className="w-full h-10 bg-neutral-800 p-1 rounded-lg">
         <div
-          className="h-full bg-green-500 rounded-md"
+          className="h-full bg-white rounded-md"
           style={{ width: `${percentage}%` }}
         ></div>
       </div>
