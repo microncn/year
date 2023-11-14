@@ -1,11 +1,10 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   subsets: ["latin"],
 });
-
-import flag from "../images/palestine.png";
 
 export const metadata = {
   title: "Next.js",
@@ -20,14 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body className="max-h-screen h-screen">
-        <a
-          href="https://www.launchgood.com/communitypage/support_palestinians_in_gaza"
-          target="_blank"
-          className="flex justify-center items-center bg-neutral-900 text-white py-2 gap-2"
-        >
-          <img src={flag.src} className="w-5" />
-          <p>#FreePalestine</p>
-        </a>
+        <Analytics />
         {children}
       </body>
     </html>
